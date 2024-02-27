@@ -1,6 +1,6 @@
 .button {
     border: none;
-    color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -13,11 +13,11 @@
 
 .button {
     background-color: #950000; 
-    color: rgb(#ffffff); 
+    color: rgb(rgb(255, 255, 255)); 
 }
 
 .button:hover {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     color: rgb(68, 68, 68);
     border: 2px solid #950000;
 }
