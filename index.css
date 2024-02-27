@@ -1,23 +1,32 @@
-.button {
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 16px 32px;
-    text-align: center;
+.container{
+	display: grid;
+	width: 1fr;
+	grid-template-columns: repeat(6, 1fr);
+    grid-column: span 6;
+	grid-auto-rows: auto;
+    grid-gap: 1em;
+	padding-top: 20px;
+}
+
+.button{
+	padding: 16px 32px;
+    min-width: 30px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #950000;
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	transition: .2s;
+    margin: 10px 10px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button {
-    background-color: #950000; 
-    color: rgb(rgb(255, 255, 255)); 
-}
-
-.button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(68, 68, 68);
     border: 2px solid #950000;
+    justify-content: center;
+    align-items: center;
+	&:hover {
+		transform: scale(1.05);
+		background-color: #ffffff;
+        color: rgb(68, 68, 68);
+        border: 2px solid #950000;
+	}
 }
