@@ -54,6 +54,7 @@ input[type=submit]{
 	grid-auto-rows: auto;
     grid-gap: 1em;
 	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 div.container img{
