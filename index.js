@@ -19,25 +19,23 @@ function getZodiacSign(month, day) {
         }
     }
     return zodiacSigns[zodiacSigns.length - 1]; // Capricorn (default)
-
-    console.log(getZodiacSign(3, 21)); // Output: Aries
-    console.log(getZodiacSign(3, 21)); // Output: Aries
-
 }
 
 // Event listener for form submission
-document.getElementById("birthdayForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("birthdayForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
 
-    // Get the input value (birthday)
-    const birthdayInput = document.getElementById("birthday").value;
-    const birthdayDate = new Date(birthdayInput);
-    const month = birthdayDate.getMonth() + 1; // Months are zero-indexed
-    const day = birthdayDate.getDate();
+        // Get the input value (birthday)
+        const birthdayInput = document.getElementById("birthday").value;
+        const birthdayDate = new Date(birthdayInput);
+        const month = birthdayDate.getMonth() + 1; // Months are zero-indexed
+        const day = birthdayDate.getDate();
 
-    // Determine the zodiac sign
-    const zodiacSign = getZodiacSign(month, day);
+        // Determine the zodiac sign
+        const zodiacSign = getZodiacSign(month, day);
 
-    // Display the zodiac sign to the user
-    alert(`Your zodiac sign is ${zodiacSign}`);
+        // Redirect the user to the corresponding HTML page
+        window.location.href = `${zodiacSign.toLowerCase()}.html`;
+    });
 });
