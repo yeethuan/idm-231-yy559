@@ -91,6 +91,10 @@ p{
 	border-radius: 20px;
 }
 
+img {
+	margin: auto;
+}
+
 
 
 input[type=submit]{
