@@ -11,25 +11,25 @@
 </head>
 
 <body>
-    <a href="javascript:void(0);" class="popup" onclick="myfunction()">
+    <a href="javascript:void(0);" class="popup" onclick="myFunction()">
         <i class="fa fa-question-circle" aria-hidden="true"></i>
         <span class="popuptext" id="myPopup">
-            Help Popup:
-
-            Enter your birthday to find out how spicy you are :D or spicy…but like in what way?
-            Your spice level does NOT determine how fire you are!!
-            Enjoy some water sounds to level down some of the heat
-            </span>
+            Help Popup: <br>
+            1. Enter your birthday to find out how spicy you are :D or spicy…but like in what way? <br>
+            2. Your spice level does NOT determine how fire you are!! <br>
+            3. Enjoy some water sounds to level down some of the heat <br>
+        </span>
     </a>
     
-    <!-- <script>
-    // When the user clicks on icon, open the popup
+    <script>
     function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+        console.log(myPopup)
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        console.log("Popup visibility:", popup.classList.contains("show"))
     }
-    </script> -->
-s
+    </script>
+
     <h1>How spicy am I?</h1>
     <h2>Zodiac Edition</h2>
 
@@ -37,7 +37,7 @@ s
         <form>
             <label for="birthday">Birthday:</label><br>
             <input type="date" id="birthday" name="birthday"><br>
-            <button type="button">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
