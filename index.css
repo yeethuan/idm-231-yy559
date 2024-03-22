@@ -6,45 +6,44 @@
 
 /* Popup START*/
 .popup {
-	position: relative;
-	display: inline-block;
+	bottom: 0%;
+	color:#950000;
 	cursor: pointer;
+	display: inline-block;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
-	color:#950000;
-	z-index: 1;
-	bottom: 0%;
 	left: 0%;
+	position: relative;
 	top: 10%;
-
+	user-select: none;
+	z-index: 1;
 }
 
 .popup .popuptext {
+	color: #333333;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position: relative;
 	visibility: hidden;
 	width: 160px;
-	color: #333333;
-	position: relative;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .popup .popuptext::after {
-	content: "";
-	position: relative;
-	top: 100%;
-	left: 50%;
-	padding-top: 300px;
-	margin-left: 5px;
 	border-width: 100px;
 	border-style: solid;
 	border-color: #555 transparent transparent transparent;
+	content: "";
+	left: 50%;
+	margin-left: 5px;
+	padding-top: 300px;
+	position: relative;
+	top: 100%;
 }
 
 .popup .show {
+	animation: fadeIn 1s;
 	visibility: visible;
 	-webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -63,24 +62,24 @@
 
 
 h1{
-	text-align: center;
-	font-family:Arial, Helvetica, sans-serif;
-	margin-top: 60px;
 	color: #950000;
+	font-family:Arial, Helvetica, sans-serif;
 	font-weight: bold;
+	margin-top: 60px;
+	text-align: center;
 }
 
 h2{
+	color: #d23f00;
+	font-family:Arial, Helvetica, sans-serif;
     margin: 10px 10px;
 	text-align: center;
-	font-family:Arial, Helvetica, sans-serif;
-	color: #d23f00;
 
 }
 
 p{
-	text-align: center;
 	font-family: Helvetica, sans-serif;
+	text-align: center;
 }
 
 
@@ -88,12 +87,12 @@ p{
 
 /* Input your birthday */
 .form-container{
-	display:flex;
-	justify-content: center;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	margin:30px;
 	border-radius: 20px;
+	display:flex;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	margin:30px;
+	text-align: center;
 }
 
 .control {
@@ -113,25 +112,25 @@ label[type="birthday"]{
 
 input{
 	align-items: center;
-	margin: 4px;
 	color:#ff824c;
+	margin: 4px;
 }
 
 input[type="submit"], button[type="submit"] {
 	background-color: #ff824c;
 	border: none;
+	border-radius: 4px;
 	color: white;
+	cursor: pointer;
+	margin-top: 5px;
 	padding: 13px 36px;
 	text-decoration: none;
-	margin-top: 5px;
-	cursor: pointer;
-	border-radius: 4px;
 }
 
 input[type="submit"]:hover, button[type="submit"]:hover {
     background-color: #ffffff;
-    color: #ff824c;
     border: 2px solid #ff824c;
+    color: #ff824c;
 }
 
 
@@ -139,13 +138,13 @@ input[type="submit"]:hover, button[type="submit"]:hover {
 /* ZODIAC IMAGES GRID*/
 .container{
 	display: grid;
-	width: 1fr;
-	grid-template-columns: repeat(6, 1fr);
-    grid-column: span 6;
 	grid-auto-rows: auto;
-    grid-gap: 1em;
-	padding-top: 20px;
 	padding-bottom: 50px;
+    grid-column: span 6;
+    grid-gap: 1em;
+	grid-template-columns: repeat(6, 1fr);
+	padding-top: 20px;
+	width: 1fr;
 }
 
 div.container img{
@@ -160,25 +159,25 @@ img {
 
 /* ZODIAC BUTTONS */
 .button{
-	padding: 16px 32px;
-    min-width: 30px;
-	text-align: center;
-	cursor: pointer;
-	background-color: #950000;
-	color: white;
-	font-size: 16px;
-	border-radius: 4px;
-	transition: .2s;
-    margin: 10px 10px;
-    text-decoration: none;
-    border: 2px solid #950000;
-    justify-content: center;
     align-items: center;
+	background-color: #950000;
+    border: 2px solid #950000;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+    justify-content: center;
+    margin: 10px 10px;
+    min-width: 30px;
+	padding: 16px 32px;
+	text-align: center;
+    text-decoration: none;
+	transition: .2s;
 	&:hover {
 		transform: scale(1);
 		background-color: #ffffff;
-		color: #950000;
         border: 2px solid #950000;
+		color: #950000;
 	}
 }
