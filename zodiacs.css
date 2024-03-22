@@ -30,3 +30,20 @@ p{
     line-height: 30px;
     font-size: 14px;
 }
+
+button{
+    display:block;
+    margin:auto;
+    background-color: #950000;
+    color:#ffffff;
+    border-radius: 10px;
+    border:#950000;
+    text-align: center;
+    padding: 30px;
+    &:hover {
+		transform: scale(1);
+		background-color: #ffffff;
+		color: #950000;
+        border: 2px solid #950000;
+	}
+}
